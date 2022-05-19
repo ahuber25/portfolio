@@ -93,7 +93,7 @@ header h1 a:hover {
 }
 
 .section-titles {
-    width: 300px;
+    width: 220px;
 }
 
 .section-titles h3{
@@ -113,26 +113,67 @@ header h1 a:hover {
 }
 
 .project-sites {
-    width: 600px;
-    height: 400px;
-    overflow: hidden;
-    border: solid 7px var(--primary-match);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 800px;
 }
 
 .project-sites img {
-    height: 100%;
     float: right;
-    opacity: 0.9;
+    border: solid 7px var(--primary-match);
+    margin: 10px;
+    opacity: 0.8;
 }
 
 .project-sites img:hover {
     opacity: 1;
 }
 
+.image-1 {
+    position: relative;
+}
+
+.image-1 img {
+    height: 500px;
+    width: 800px;
+    overflow: hidden;
+}
+
+.image-1 p {
+    position: absolute;
+    top: 300px;
+    left: 10px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px 10px 10px 50px;
+    background-color: var(--primary-match);
+}
+
+.image-2 {
+    position: relative;
+}
+
+.image-2 img {
+    height: 200px;
+    width: 380px;
+    overflow: hidden;
+}
+
+.image-2 p {
+    position: absolute;
+    top: 150px;
+    left: 10px;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 10px 10px 10px 50px;
+    background-color: var(--primary-match);
+}
+
 .info {
-    width: 600px;
+    width: 800px;
 }
 
 .find-me {
-    width: 600px;
+    width: 800px;
 }
