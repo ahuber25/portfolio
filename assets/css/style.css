@@ -70,6 +70,7 @@ header h1 a:hover {
 
 .title-image {
     background-image: url("../images/title-image.jpg");
+    background-attachment: fixed;
     height: 300px;
     width: 100%;
     background-position: center;
@@ -107,7 +108,6 @@ header h1 a:hover {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    align-items: flex-start;
     padding: 20px;
 }
 
@@ -119,10 +119,12 @@ header h1 a:hover {
 }
 
 .project-sites img {
+    display: flex;
     float: right;
     border: solid 7px var(--primary-match);
     margin: 10px;
     opacity: 0.8;
+    flex: 1;
 }
 
 .project-sites img:hover {
@@ -134,7 +136,8 @@ header h1 a:hover {
 }
 
 .image-1 img {
-    height: 500px;
+    display: flex;
+    height: 450px;
     width: 800px;
     overflow: hidden;
 }
@@ -152,6 +155,7 @@ header h1 a:hover {
 }
 
 .image-2 {
+    display: flex;
     position: relative;
 }
 
@@ -173,11 +177,7 @@ header h1 a:hover {
     font-weight: 800;
 }
 
-.info {
-    width: 800px;
-}
-
-.find-me {
+.info, .find-me {
     width: 800px;
 }
 
@@ -192,6 +192,14 @@ header h1 a:hover {
         text-align: center;
     }
 
+    section {
+        margin-bottom: 20px;
+    }
+
+    .section-titles {
+        margin-bottom: 20px;
+    }
+
     .nav ul {
         background-color: #262626;
         background-size: cover;
@@ -204,13 +212,18 @@ header h1 a:hover {
         font-size: 20px;
     }
 
+    .title-image {
+        width: 100%;
+    }
+
     .subtitle {
         justify-content: center;
         font-size: 20px;
         margin-top: 150px;
     }
 
-    .section-titles {
-        justify-content: center;
+    .project-sites img {
+        max-width: 100%;
+        max-height: 100%;
     }
 }
