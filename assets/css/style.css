@@ -78,6 +78,7 @@ header h1 a:hover {
 }
 
 .subtitle {
+    text-align: right;
     float: right;
     margin-top: 100px;
     margin-right: 50px;
