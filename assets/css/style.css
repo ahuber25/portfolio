@@ -92,10 +92,47 @@ header h1 a:hover {
     opacity: 1;
 }
 
+.section-titles {
+    width: 300px;
+}
+
 .section-titles h3{
     color: var(--secondary-match);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 50px;
     border-right: solid 3px var(--secondary-match);
     text-align: left;
+}
+
+.items {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.project-sites {
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+    border: solid 7px var(--primary-match);
+}
+
+.project-sites img {
+    height: 100%;
+    float: right;
+    opacity: 0.9;
+}
+
+.project-sites img:hover {
+    opacity: 1;
+}
+
+.info {
+    width: 600px;
+}
+
+.find-me {
+    width: 600px;
 }
